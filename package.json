@@ -1,0 +1,30 @@
+{
+  "name": "tg-commander-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -rf publish",
+    "package": "npm run clean && tsc -p ./tsconfig.json && cp package.json publish"
+  },
+  "keywords": [
+    "tg-commander",
+    "node",
+    "commander",
+    "node",
+    "tiger"
+  ],
+  "bin": {
+    "hello": "./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tg-commander": "^1.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
